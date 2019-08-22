@@ -5,7 +5,8 @@ defmodule ApiWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/api", ApiWeb do
+  scope "/api/:service_name", ApiWeb do
     pipe_through :api
+    get "/", PageController, :index
   end
 end
