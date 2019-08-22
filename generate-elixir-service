@@ -17,11 +17,11 @@ main() {
 
 mix_new() {
   local template_folder
-  template_folder="${BASH_SOURCE[0]}/elixir_template"
+  template_folder="$(dirname "${BASH_SOURCE[0]}")/elixir_template/"
 
   if [[ -d $template_folder ]]; then
     mkdir -p "$(pwd)/${SERVICE_NAME}"
-    cp -R "${template_folder}" "$(pwd)"
+    cp -R "${template_folder}" "$(pwd)/${SERVICE_NAME}"
   fi
 
 }
