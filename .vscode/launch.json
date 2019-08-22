@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "bashdb",
+      "request": "launch",
+      "name": "generate-elixir-service",
+      "program": "generate-elixir-service"
+    },
+    {
+      "type": "bashdb",
+      "request": "launch",
+      "name": "generate-elixir-service example-service",
+      "program": "generate-elixir-service",
+      "args": ["example-service"]
+    }
+  ]
+}
