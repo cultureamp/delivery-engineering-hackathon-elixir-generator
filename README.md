@@ -3,7 +3,7 @@ A hackathon project (2019-08-22)
 
 ---
 
-Usage:
+# Usage:
 
 ```
 ./generate-elixir-service <service-name>
