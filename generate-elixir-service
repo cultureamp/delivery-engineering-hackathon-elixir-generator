@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -euxo pipefail
+set -exo pipefail
 
 main() {
   local service_name=$1
@@ -9,6 +9,12 @@ main() {
     help
     exit 1
   fi
+
+  mix_new $service_name
+}
+
+mix_new() {
+  $(mix new $1)
 }
 
 help() {
